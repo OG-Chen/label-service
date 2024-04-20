@@ -11,7 +11,7 @@ labels = LabelIn(
 
 def test_create_client(labels: LabelIn = labels):
     assert dict(labels) == {'name': labels.name,
-                              'phone': labels.surname,
+                              'phone': labels.phone,
                               'count_artists': labels.count_artists,
                               'county': labels.county
                               }
@@ -26,7 +26,7 @@ def test_update_client_age(labels: LabelIn = labels):
         id=1
     )
     assert dict(labels_upd) == {'name': labels.name,
-                              'phone': labels.surname,
+                              'phone': labels.phone,
                               'count_artists': labels.count_artists,
                               'county': labels.county,
                               'id': labels_upd.id
@@ -42,7 +42,7 @@ def test_update_client_genre(labels: LabelIn = labels):
         id=1
     )
     assert dict(labels_upd) == {'name': labels.name,
-                              'phone': labels.surname,
+                              'phone': labels.phone,
                               'count_artists': labels.count_artists,
                               'county': labels.county,
                               'id': labels_upd.id
