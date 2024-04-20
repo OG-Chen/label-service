@@ -13,7 +13,7 @@ def test_create_label(labels: LabelIn = labels):
     assert dict(labels) == {'name': labels.name,
                             'phone': labels.phone,
                             'count_artists': labels.count_artists,
-                            'country': labels.country
+                            'county': labels.county
                             }
 
 
@@ -28,7 +28,7 @@ def test_update_label_city(labels: LabelIn = labels):
     assert dict(labels_upd) == {'name': labels.name,
                                 'phone': labels.phone,
                                 'count_artists': labels.count_artists,
-                                'country': labels.country,
+                                'county': labels.county,
                                 'id': labels_upd.id}
 
 
@@ -43,6 +43,6 @@ def test_update_label_city(labels: LabelIn = labels):
     assert dict(labels_upd) == {'name': labels.name,
                                 'phone': labels.phone,
                                 'count_artists': labels.count_artists,
-                                'country': labels.country,
+                                'county': labels.county,
                                 'id': labels_upd.id
                                 }
